@@ -7,7 +7,9 @@ COPY vendor vendor
 COPY retry retry
 COPY db db
 COPY schema schema
-COPY api-service api-service
+COPY event event
+COPY api-query-service api-query-service
+COPY command-service command-service
 
 RUN go install ./...
 
